@@ -104,6 +104,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="custom_recents_corners_type_default">По умолчанию</string>
     <string name="custom_recents_corners_type_card">Закругленные карточки</string>
     <string name="custom_recents_corners_type_op">Стиль OP</string>
+	
+    <string name="theme_style_title">Тема</string>
+    <string name="theme_style_auto">На основе обоев</string>
+    <string name="theme_style_light">Светлая</string>
+    <string name="theme_style_dark">Темная</string>
 
 </resources>
 
