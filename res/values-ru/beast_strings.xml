@@ -109,6 +109,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="theme_style_auto">На основе обоев</string>
     <string name="theme_style_light">Светлая</string>
     <string name="theme_style_dark">Темная</string>
+	
+    <!-- Show searchbar -->
+    <string name="show_searchbar_title">Виджет поиска</string>
+    <string name="show_searchbar_summary">Отображать виджет поиска на главном экране</string>
 
 </resources>
 

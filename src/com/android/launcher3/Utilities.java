@@ -69,6 +69,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.android.internal.util.beast.BeastUtils;
+
 /**
  * Various utilities shared amongst the Launcher's classes.
  */
@@ -731,6 +733,15 @@ public final class Utilities {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return prefs.getBoolean(Homescreen.KEY_FEED_INTEGRATION, true);
     }
+	
+    public static boolean showQSB(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        if (!BeastUtils.isPackageInstalled(context, LauncherTab.SEARCH_PACKAGE)) {
+            return false;
+        }
+        return prefs.getBoolean(Homescreen.KEY_SHOW_SEARCHBAR, true);
+    }
+
 
     public static void restart(final Context context) {
         //ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
